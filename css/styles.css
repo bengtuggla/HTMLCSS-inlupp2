@@ -73,22 +73,21 @@ a {
   text-decoration: none;
 }
 
-/* ----------------------------------------------------------------------- */
 /* Logo to large - 100% of its container. This will override. */
 img:not(.nav-logo) {
   width: 100%;
   display: block;
 }
-/* img {
-  width: 100%;
-  display: block;
-} */
 
 
-/*  global classes */
+
+/*
+=============== 
+Global Classes
+===============
+*/
 
  .btn {
-  /* text-transform: uppercase; */
   background: var(--clr-blue);
   color: var(--clr-white);
   padding: 0.375rem 0.75rem;
@@ -126,6 +125,12 @@ img:not(.nav-logo) {
   max-width: 1170px;
 } */
 
+
+/* 
+###################################################
+  -  M A I N   C O D E  -
+###################################################
+*/
 
 /*
 =============== 
@@ -183,7 +188,6 @@ HEADER
 }
 
 /* Hamburger toggler button */
-
 .nav-toggle {
     background: transparent;
     border: transparent;
@@ -192,9 +196,7 @@ HEADER
     color: var(--clr-white);
     cursor: pointer;
     transition: var(--transition);
-}
-    
-    
+}  
 .nav-toggle:hover {
     transform: scale(1.2);
 }
@@ -218,15 +220,27 @@ HEADER
     font-weight: bold;
   }
   
-  
+  /* Nav-links */
+  .nav-links {
+    /* real height 280px. Can use in js to show menu when toggling */
+    height: 0;
+    /* removes overflow even if height is zero */
+    overflow: hidden;
+
+  }
+  /* Show menu  - from default 0px to needed 280px*/
+  .show-links {
+    height: 280px;
+    }
+    
   
   
   
     
 /*
-=============== 
+======================== 
 Top section Mediaqueries
-===============
+========================
 */
 @media (min-width:460px){
     .top-section .blue-rectangle, .top-section .overlay-rectangle {
