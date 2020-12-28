@@ -253,7 +253,35 @@ HEADER
       display: none;
     }
   
-  
+    /*
+=============== 
+SHOWCASE
+===============
+*/
+  .section-center {
+    border: 1px solid red;
+    margin-top: o.7rem;
+  }
+  .section-center h1 {
+   font-family: var(--ff-secondary);
+   /* font-size: 3.56rem; */
+   font-size: 1.15rem;
+   text-align: center;
+   color: var(--clr-white);
+   font-weight: bold;
+   text-transform: capitalize;
+  }
+  .section-center p {
+   font-family: var(--ff-secondary);
+   font-size: 0.7rem;
+   /* font-size: 0.9375rem; */
+   text-align: center;
+   color: var(--clr-white);
+   /* text-transform: capitalize; */
+   padding: 1rem 5rem;
+  }
+
+
   
     
 /*
