@@ -1,0 +1,77 @@
+ <nav class="navbar">
+      <!--flex container responsible for 1170px big screen -->
+      <div class="nav-center">
+        <!-- Nav Header (holding logo-links and button big screen and logo + hamburger small screen) -->
+          <div class="nav-header">
+            <img src="./images/logo.svg" class="nav-logo" alt="logo">
+            <!-- Toggle button -->
+            <button class="nav-toggle" id="nav-toggle" type="button">
+              <i class="fas fa-bars"></i>
+            </button>
+          </div>
+        <!-- end of Nav Header -->
+
+        <!-- Nav Links -->
+          <ul class="nav-links" id="nav-links">
+            <!-- Single link -->
+            <li>
+              <a href="#" class="nav-link scroll-link">home</a>
+            </li>
+            <!-- end of Single link -->
+            <!-- Single link -->
+            <li>
+              <a href="#about" class="nav-link scroll-link">about</a>
+            </li>
+            <!-- end of Single link -->
+            <!-- Single link -->
+            <li>
+              <a href="#" class="nav-link scroll-link">services</a>
+            </li>
+            <!-- end of Single link -->
+            <!-- Single link -->
+            <li>
+              <a href="#" class="nav-link scroll-link">featured</a>
+            </li>
+            <!-- end of Single link -->
+            <!-- Single link -->
+            <li>
+              <a href="#" class="nav-link scroll-link">gallery</a>
+            </li>
+            <!-- end of Single link --> 
+          </ul>
+          <!-- end of Nav Links -->
+
+          <!-- Social Icons -->
+          <ul class="nav-icons">
+            <!-- Single icon -->
+            <li>
+              <a href="https://www.twitter.com" target="_blank" class="nav-icon">
+                <i class="fab fa-facebook"></i>
+              </a>
+            </li>
+            <!-- end of Single icon -->
+            <!-- Single icon -->
+            <li>
+              <a href="https://www.facebook.com" class="nav-icon">
+              <i class="fab fa-twitter"></i>
+            </a>
+            </li>
+            <!-- end of Single icon -->
+            <!-- Single icon -->
+            <li>
+              <a href="https://www.facebook.com" class="nav-icon">
+              <i class="fab fa-instagram"></i>
+            </a>
+            </li>
+            <!-- end of Single icon -->
+            <!-- Single icon -->
+            <li>
+              <a href="https://www.facebook.com" class="nav-icon">
+              <i class="fab fa-squarespace"></i>
+            </a>
+            </li>
+            <!-- end of Single icon -->
+          </ul>
+          <!-- end of Social Icons -->
+      </div>
+    </nav>
