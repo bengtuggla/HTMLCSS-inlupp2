@@ -226,6 +226,7 @@ HEADER
     height: 0;
     /* removes overflow even if height is zero */
     overflow: hidden;
+    background: var(--clr-white);
 
   }
   /* Show menu  - from default 0px to needed 280px*/
