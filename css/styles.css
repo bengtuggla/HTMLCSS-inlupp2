@@ -267,7 +267,7 @@ SHOWCASE
    font-family: var(--ff-secondary);
    /* font-size: 3.56rem; */
    font-size: 2.5rem;
-   text-align: center;
+   text-align:center;
    /* color: var(--clr-white); */
    color: var(--clr-yellow);
    font-weight: bold;
@@ -284,6 +284,29 @@ SHOWCASE
    padding: 1rem 5rem;
   }
 
+.download-media {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  
+}
+.download-media img {
+  width: 9.69rem;
+}
+.btn-download {
+  border: 1px solid white;
+  border-radius: 0.7rem;
+  background: transparent;
+  font-size: 1rem;
+  font-weight: 500;
+  letter-spacing: 0.02rem;
+  padding: 0.9rem 1rem;
+  transition: var(--transition);
+  text-transform: capitalize;
+  margin-right: 1rem;
+
+}
+   
 
   
     
@@ -350,7 +373,7 @@ Top section Mediaqueries
        position: absolute;
        /* top: -38rem;
        left: -9rem; */
-       top: -62%;
+       top: -52%;
        left: -8%;
        /* Height procent + width auto = responsive image */
        width:115%;
@@ -427,18 +450,21 @@ Top section Mediaqueries
           align-items: center;
         }
         .showcase-img, .showcase-info {
-          flex: 0 0 calc(50% - 2rem);
+          flex: 0 0 calc(50% - 0rem);
+          border: 1px solid red;
         }
 
         .section-center {
           margin-top: 0.7rem;
           background-image: none;
-          padding: 0 1.5rem 1.5rem 1.5rem;
+          padding: 0 0rem 1.5rem 0rem;
+          border: 1px solid red;
         }
         .section-center h1 {
          font-family: var(--ff-secondary);
          font-size: 3.56rem;
-         text-align: center;
+         /* font-size: calc(100vw / 57); */
+         text-align: left;
          color: var(--clr-white);
          font-weight: bold;
          text-transform: capitalize;
@@ -447,10 +473,11 @@ Top section Mediaqueries
         .section-center p {
          font-family: var(--ff-secondary);
          font-size: 0.9375rem;
-         text-align: center;
+         text-align: left;
          color: var(--clr-white);
          /* text-transform: capitalize; */
-         padding: 1rem 5rem;
+         /* padding: 1rem 5rem; */
+         padding: 1rem 0;
         }
       
       
@@ -463,7 +490,7 @@ Top section Mediaqueries
     .top-section .blue-rectangle, .top-section .overlay-rectangle {
        position: absolute;
        /* top: -48rem; */
-       top: -72%;
+       top: -62%;
        /* bottom: 4rem; */
        /* left: -9rem; */
        left: -8%;
@@ -477,11 +504,13 @@ Top section Mediaqueries
 
   }
 }
-
+@media (min-width: 1300px) {
+  top: -72%;
+}
 @media (min-width: 1400px) {
   .top-section .blue-rectangle, .top-section .overlay-rectangle {
      position: absolute;
-     /* top: -48rem; */
+     /* top: -40rem; */
      top: -82%;
      /* bottom: 4rem; */
      /* left: -9rem; */
