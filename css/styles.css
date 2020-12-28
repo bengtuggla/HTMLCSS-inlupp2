@@ -34,7 +34,7 @@ Variables
   --clr-yellow: #ffbb00;
   --clr-grey: #8a8a8a;
   --clr-black: #333333;
-  --clr-blue: #1487FD;
+  --clr-blue: #1487fd;
   --clr-white: #fff;
 
  /* primary fonts*/
@@ -206,7 +206,7 @@ HEADER
     border: transparent;
     outline: none;
     font-size: 2rem;
-    color: var(--clr-yellow);
+    color: var(--clr-white);
     cursor: pointer;
     transition: var(--transition);
 }  
@@ -259,24 +259,27 @@ SHOWCASE
 ===============
 */
   .section-center {
-    border: 1px solid red;
-    margin-top: o.7rem;
+    margin-top: 0.7rem;
+    background-image: linear-gradient(rgba(255, 255, 255, 0), rgba(20,135,253,0.9));
+    padding: 0 1.5rem 1.5rem 1.5rem;
   }
   .section-center h1 {
    font-family: var(--ff-secondary);
    /* font-size: 3.56rem; */
-   font-size: 1.15rem;
+   font-size: 2.5rem;
    text-align: center;
-   color: var(--clr-white);
+   /* color: var(--clr-white); */
+   color: var(--clr-yellow);
    font-weight: bold;
    text-transform: capitalize;
+   text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
   }
   .section-center p {
    font-family: var(--ff-secondary);
-   font-size: 0.7rem;
+   font-size: 0.9rem;
    /* font-size: 0.9375rem; */
    text-align: center;
-   color: var(--clr-white);
+   color: var(--clr-grey);
    /* text-transform: capitalize; */
    padding: 1rem 5rem;
   }
@@ -410,7 +413,6 @@ Top section Mediaqueries
         padding-left: 0;
       }
 
-
         a:hover > .uline{
           /* text-decoration:underline; */
           border-bottom: 3px solid var(--clr-yellow);
@@ -419,6 +421,39 @@ Top section Mediaqueries
         .nav-bar {
           padding: 1rem 2rem;
         }
+        .section-center {
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+        }
+        .showcase-img, .showcase-info {
+          flex: 0 0 calc(50% - 2rem);
+        }
+
+        .section-center {
+          margin-top: 0.7rem;
+          background-image: none;
+          padding: 0 1.5rem 1.5rem 1.5rem;
+        }
+        .section-center h1 {
+         font-family: var(--ff-secondary);
+         font-size: 3.56rem;
+         text-align: center;
+         color: var(--clr-white);
+         font-weight: bold;
+         text-transform: capitalize;
+         text-shadow:none;
+        }
+        .section-center p {
+         font-family: var(--ff-secondary);
+         font-size: 0.9375rem;
+         text-align: center;
+         color: var(--clr-white);
+         /* text-transform: capitalize; */
+         padding: 1rem 5rem;
+        }
+      
+      
 
     }
        
