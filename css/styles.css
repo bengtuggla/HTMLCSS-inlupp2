@@ -147,6 +147,7 @@ HEADER
 .top-section {
     position: relative;
     height: 58rem;
+    /* height: 100vh; */
     width: 100%;
     margin: 0 auto;
     overflow: hidden;
@@ -313,12 +314,39 @@ SHOWCASE
  fill:var(--clr-yellow);
 }
     
+.download-media .svg:hover > svg #Watch_Video-2{
+  fill: var(--clr-grey);
+  transition: var(--transition);
+}
+    
 
-.download-media:hover > svg #Watch_Video-2{
- fill: var(--clr-grey);
- transition: var(--transition);
+
+/*
+=============== 
+EC LOGOS
+===============
+*/
+.ec-logos {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  /* height: 40rem; */
+  /* height: 10vh; */
+  /* width: 100vw; */
+  margin: 3rem auto ;
+  /* margin-top: 5rem; */
+  max-width: 1170px;
+  padding: 3rem;
 }
 
+.ec-logos img{
+  /* flex: 100%; */
+  /* width: 11.44rem; */
+  width:15rem;
+  padding-bottom: 5rem;
+ 
+} 
     
 /*
 ======================== 
@@ -352,6 +380,12 @@ Top section Mediaqueries
     .section-center p {
       color: var(--clr-black);
      }
+     .ec-logos {
+      display: flex;
+      justify-content: center;
+      padding: 2rem 0;
+
+    }
 
     
 }
@@ -366,7 +400,13 @@ Top section Mediaqueries
         width:115%;
         height: auto;  
     } 
+    .ec-logos {
+      display: flex;
+      justify-content: space-between;
+      padding: 2rem 0;
 
+    }
+  
 }
 
 
@@ -381,6 +421,22 @@ Top section Mediaqueries
         width:115%;
         height: auto;  
     } 
+
+      
+    
+    .ec-logos img{
+      /* flex: 100%; */
+      /* width: 11.44rem; */
+      width:11rem;
+      padding-bottom: 5rem;
+     
+    } 
+    .ec-logos {
+      display: flex;
+      justify-content: space-between;
+      padding: 2rem 0;
+
+    }
 }
 @media (min-width: 992px) {
     .top-section .blue-rectangle, .top-section .overlay-rectangle {
@@ -516,6 +572,20 @@ Top section Mediaqueries
         .download-media svg #Watch_Video-2{
           fill:var(--clr-white);
          }
+         .ec-logos img{
+          /* flex: 25%; */
+          width: 11.44rem;
+          /* width:20rem; */
+          padding-bottom: 5rem;
+         
+        } 
+        .ec-logos {
+          display: flex;
+          justify-content: space-between;
+          padding: 2rem 0;
+
+        }
+            
 
     }
        
@@ -547,7 +617,7 @@ Top section Mediaqueries
   .top-section .blue-rectangle, .top-section .overlay-rectangle {
      position: absolute;
      /* top: -40rem; */
-     top: -52%;
+     top: -62%;
      /* bottom: 4rem; */
      /* left: -9rem; */
      left: -8%;
@@ -561,13 +631,22 @@ Top section Mediaqueries
  .showcase-info {
   padding-left:0;
 }
+.ec-logos img{
+  /* flex: 25%; */
+
+  width: 11.44rem !important;
+  /* width: 6rem; */
+  /* padding: 1rem 1rem; */ 
+ 
+} 
+
 }
 
 @media (min-width: 1600px) {
   .top-section .blue-rectangle, .top-section .overlay-rectangle {
      position: absolute;
      /* top: -40rem; */
-     top: -72%;
+     top: -82%;
      /* bottom: 4rem; */
      /* left: -9rem; */
      left: -8%;
@@ -575,6 +654,8 @@ Top section Mediaqueries
      width:115%;
      height: auto;  
  } 
+
+
 }
 
 @media (min-width: 1920px) {
@@ -582,6 +663,19 @@ Top section Mediaqueries
     max-width: 1920px;
     overflow:visible;
   }
+  .top-section .blue-rectangle, .top-section .overlay-rectangle {
+    position: absolute;
+    /* top: -40rem; */
+    top: -85%;
+    /* bottom: 4rem; */
+    /* left: -9rem; */
+    left: -8%;
+    /* Height procent + width auto = responsive image */
+    width:115%;
+    height: auto;  
+} 
+
+
 }
   
 
