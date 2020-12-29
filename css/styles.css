@@ -306,9 +306,7 @@ SHOWCASE
   margin-right: 1rem;
 
 }
-   
 
-  
     
 /*
 ======================== 
@@ -339,6 +337,10 @@ Top section Mediaqueries
     .nav-center {
         background: transparent;
     }
+    .section-center p {
+      color: var(--clr-black);
+     }
+
     
 }
 @media (min-width: 576px) {
@@ -373,7 +375,7 @@ Top section Mediaqueries
        position: absolute;
        /* top: -38rem;
        left: -9rem; */
-       top: -52%;
+       top: -35%;
        left: -8%;
        /* Height procent + width auto = responsive image */
        width:115%;
@@ -451,18 +453,19 @@ Top section Mediaqueries
         }
         .showcase-img, .showcase-info {
           flex: 0 0 calc(50% - 0rem);
-          border: 1px solid red;
+        }
+        .showcase-info {
+          padding-left:3rem;
         }
 
         .section-center {
           margin-top: 0.7rem;
           background-image: none;
           padding: 0 0rem 1.5rem 0rem;
-          border: 1px solid red;
         }
         .section-center h1 {
          font-family: var(--ff-secondary);
-         font-size: 3.56rem;
+         font-size: 1.7rem;
          /* font-size: calc(100vw / 57); */
          text-align: left;
          color: var(--clr-white);
@@ -490,7 +493,7 @@ Top section Mediaqueries
     .top-section .blue-rectangle, .top-section .overlay-rectangle {
        position: absolute;
        /* top: -48rem; */
-       top: -62%;
+       top: -38%;
        /* bottom: 4rem; */
        /* left: -9rem; */
        left: -8%;
@@ -499,19 +502,40 @@ Top section Mediaqueries
        height: auto;  
    } 
    .nav-link {
-
     margin-right: 2.5rem;
-
   }
+  .section-center h1 {
+    font-size: 2.5rem;
+   }
 }
 @media (min-width: 1300px) {
-  top: -72%;
+  top: -62%;
 }
 @media (min-width: 1400px) {
   .top-section .blue-rectangle, .top-section .overlay-rectangle {
      position: absolute;
      /* top: -40rem; */
-     top: -82%;
+     top: -52%;
+     /* bottom: 4rem; */
+     /* left: -9rem; */
+     left: -8%;
+     /* Height procent + width auto = responsive image */
+     width:115%;
+     height: auto;  
+ } 
+ .section-center h1 {
+  font-size: 3.56rem;
+ }
+ .showcase-info {
+  padding-left:0;
+}
+}
+
+@media (min-width: 1600px) {
+  .top-section .blue-rectangle, .top-section .overlay-rectangle {
+     position: absolute;
+     /* top: -40rem; */
+     top: -72%;
      /* bottom: 4rem; */
      /* left: -9rem; */
      left: -8%;
@@ -521,6 +545,13 @@ Top section Mediaqueries
  } 
 }
 
+@media (min-width: 1920px) {
+  .top-section {
+    max-width: 1920px;
+    overflow:visible;
+  }
+}
+  
 
 
 
