@@ -107,7 +107,7 @@ Global Classes
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
 }
 .btn:hover {
-  color: var(--clr-yellow);
+  color: var(--clr-white);
   background: var(--clr-grey);
 }
 /*  
@@ -304,6 +304,7 @@ SHOWCASE
   transition: var(--transition);
   text-transform: capitalize;
   margin-right: 1rem;
+  outline: none;
 
 }
 
@@ -412,6 +413,7 @@ Top section Mediaqueries
         letter-spacing: 0.02rem;
         padding: 0.7rem 2rem;
         transition: var(--transition);
+        outline: none;
       }
       .btn-getapp:hover {
         background: var(--clr-grey);
