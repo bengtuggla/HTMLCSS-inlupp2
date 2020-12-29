@@ -313,6 +313,13 @@ SHOWCASE
  fill:var(--clr-yellow);
 }
     
+
+.download-media:hover > svg #Watch_Video-2{
+ fill: var(--clr-grey);
+ transition: var(--transition);
+}
+
+    
 /*
 ======================== 
 Top section Mediaqueries
