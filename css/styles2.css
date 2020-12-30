@@ -156,10 +156,10 @@ HEADER
 .top-section .blue-rectangle {
    display: flex;
    position: absolute;
-   /* top: -16rem;
-   left: -4rem; */
-   top: -16%;
-   left: -8%;
+   top: -16rem;
+   left: -4rem;
+   /* top: -16%;
+   left: -8%; */
    /* Height procent + width auto = responsive image */
    width:115%;
    /* height: auto;  */
@@ -168,9 +168,11 @@ HEADER
 .top-section .overlay-rectangle {
    display: flex;
    position: absolute;
+   top: -16rem;
+   left: -4rem;
    /* top: 0rem; */
-   top: -16%;
-   left: -8%;
+   /* top: -16%;
+   left: -8%; */
    /* Height procent + width auto = responsive image */
    /* width: 100%; */
    width: 115%;
@@ -269,6 +271,7 @@ SHOWCASE
     margin-top: 0.7rem;
     background-image: linear-gradient(rgba(255, 255, 255, 0), rgba(20,135,253,0.9));
     padding: 0 1.5rem 1.5rem 1.5rem;
+    width: 100%;
   }
   .section-center h1 {
    font-family: var(--ff-secondary);
@@ -359,7 +362,7 @@ EC LOGOS
 Top section Mediaqueries
 ========================
 */
-@media (max-width:300px) {
+@media (max-width:459px) {
   .nav-center {
     background: var(--clr-blue);
 } 
@@ -370,17 +373,7 @@ Top section Mediaqueries
 
 }
 @media (min-width:460px){
-    .top-section .blue-rectangle, .top-section .overlay-rectangle {
-        display: flex;
-        position: absolute;
-        /* top: -16rem;
-        left: -4rem; */
-        top: -22%;
-        left: -8%;
-        /* Height procent + width auto = responsive image */
-        width:115%;
-        height: auto;  
-    } 
+
     .nav-center {
         background: transparent;
     }
@@ -391,75 +384,78 @@ Top section Mediaqueries
       display: flex;
       justify-content: center;
       padding: 2rem 0;
-
     }
-
+    .top-section .blue-rectangle {
+        top: -15rem;
+        left: -4rem;
+     } 
+     .top-section .overlay-rectangle {
+        top: -15rem;
+        left: -4rem;
+     } 
+     .top-section {
+        max-width: 576px;
+      }
+    
     
 }
 @media (min-width: 576px) {
-    .top-section .blue-rectangle, .top-section .overlay-rectangle {
-        position: absolute;
-        /* top: -18rem;
-        left: -9rem; */
-        top: -32%;
-        left: -8%;
-        /* Height procent + width auto = responsive image */
-        width:115%;
-        height: auto;  
-    } 
+
     .ec-logos {
       display: flex;
       justify-content: space-between;
       padding: 2rem 0;
-
     }
     .section-center p {
       padding: 1rem 5rem;
      }
+     .top-section .blue-rectangle {
+        top: -17rem;
+        left: -4rem;
+     } 
+     .top-section .overlay-rectangle {
+        top: -17rem;
+        left: -4rem;
+     } 
+     .top-section {
+        max-width: 690px;
+      }
+    
 
   
 }
 
 
 @media (min-width: 768px) {
-     .top-section .blue-rectangle, .top-section .overlay-rectangle {
-        position: absolute;
-        /* top: -28rem;
-        left: -9rem; */
-        top: -48%;
-        left: -8%;
-        /* Height procent + width auto = responsive image */
-        width:115%;
-        height: auto;  
-    } 
 
-      
-    
     .ec-logos img{
       /* flex: 100%; */
       /* width: 11.44rem; */
       width:11rem;
       padding-bottom: 5rem;
-     
     } 
     .ec-logos {
       display: flex;
       justify-content: space-between;
       padding: 2rem 0;
-
     }
+    .top-section .blue-rectangle {
+        top: -20rem;
+        left: -4rem;
+     } 
+     .top-section .overlay-rectangle {
+        top: -20rem;
+        left: -4rem;
+     } 
+     .top-section {
+        max-width: 900px;
+      }
+    
 }
+
+
 @media (min-width: 992px) {
-    .top-section .blue-rectangle, .top-section .overlay-rectangle {
-       position: absolute;
-       /* top: -38rem;
-       left: -9rem; */
-       top: -35%;
-       left: -8%;
-       /* Height procent + width auto = responsive image */
-       width:115%;
-       height: auto;  
-   } 
+
       /* Hide toggle */
     .nav-toggle {
       display: none;
@@ -535,7 +531,8 @@ Top section Mediaqueries
           flex: 0 0 calc(50% - 0rem);
         }
         .showcase-info {
-          padding-left:3rem;
+          padding-left:8rem;
+          margin-bottom: 5rem;
         }
         .download-media {
           justify-content: flex-start;
@@ -563,7 +560,7 @@ Top section Mediaqueries
          color: var(--clr-white);
          /* text-transform: capitalize; */
          /* padding: 1rem 5rem; */
-         padding: 2rem 8rem 2rem 0;
+         padding: 2rem 2rem 2rem 0;
         }
         .btn-download {
           border: 1px solid white;
@@ -596,6 +593,18 @@ Top section Mediaqueries
           padding: 2rem 0;
 
         }
+        .top-section .blue-rectangle {
+            top: -24rem;
+            left: -4rem;
+         } 
+         .top-section .overlay-rectangle {
+            top: -24rem;
+            left: -4rem;
+         } 
+         .top-section {
+            max-width: 1150px;
+          }
+        
             
 
     }
@@ -603,45 +612,58 @@ Top section Mediaqueries
 
 
 @media (min-width: 1200px) {
-    .top-section .blue-rectangle, .top-section .overlay-rectangle {
-       position: absolute;
-       /* top: -48rem; */
-       top: -38%;
-       /* bottom: 4rem; */
-       /* left: -9rem; */
-       left: -8%;
-       /* Height procent + width auto = responsive image */
-       width:115%;
-       height: auto;  
-   } 
+
    .nav-link {
     margin-right: 2.5rem;
   }
-  .section-center h1 {
+  /* .section-center h1 {
     font-size: 2.5rem;
+   } */
+   .section-center p {
+    padding: 1rem 2rem 2rem 0;
    }
-}
-@media (min-width: 1300px) {
-  top: -62%;
-}
-@media (min-width: 1400px) {
-  .top-section .blue-rectangle, .top-section .overlay-rectangle {
-     position: absolute;
-     /* top: -40rem; */
-     top: -62%;
-     /* bottom: 4rem; */
-     /* left: -9rem; */
-     left: -8%;
-     /* Height procent + width auto = responsive image */
-     width:115%;
-     height: auto;  
+   .top-section .blue-rectangle {
+    top: -27rem;
+    left: -4rem;
  } 
- .section-center h1 {
-  font-size: 3.56rem;
- }
- .showcase-info {
-  padding-left:0;
+ .top-section .overlay-rectangle {
+    top: -27rem;
+    left: -4rem;
+ } 
+ .top-section {
+    max-width: 1350px;
+  }
+  .showcase-info {
+    padding-left:6rem;
+    margin-bottom: 5rem;
+  }
+
 }
+
+
+
+
+@media (min-width: 1300px) {
+ 
+}
+
+
+
+
+
+@media (min-width: 1400px) {
+
+ .section-center h1 {
+  font-size: 2.5rem;
+ }
+ .section-center p {
+
+    padding: 2rem 8rem 2rem 0;
+   }
+ .showcase-info {
+    padding-left:3rem;
+    margin-bottom: 0;
+  }
 .ec-logos img{
   /* flex: 25%; */
 
@@ -650,22 +672,39 @@ Top section Mediaqueries
   /* padding: 1rem 1rem; */ 
  
 } 
+.top-section .blue-rectangle {
+    top: -30rem;
+    left: -4rem;
+ } 
+ .top-section .overlay-rectangle {
+    top: -30rem;
+    left: -4rem;
+ } 
+ .top-section {
+    max-width: 1500px;
+  }
+
 
 }
 
 @media (min-width: 1600px) {
-  .top-section .blue-rectangle, .top-section .overlay-rectangle {
-     position: absolute;
-     /* top: -40rem; */
-     top: -82%;
-     /* bottom: 4rem; */
-     /* left: -9rem; */
-     left: -8%;
-     /* Height procent + width auto = responsive image */
-     width:115%;
-     height: auto;  
- } 
-
+    .section-center h1 {
+        font-size: 3.56rem;
+       }
+       .showcase-info {
+        padding-left:0;
+      }
+    .top-section .blue-rectangle {
+        top: -40rem;
+        left: -4rem;
+     } 
+     .top-section .overlay-rectangle {
+        top: -40rem;
+        left: -4rem;
+     } 
+     .top-section {
+        max-width: 1750px;
+      }
 
 }
 
@@ -674,23 +713,19 @@ Top section Mediaqueries
     max-width: 1920px;
     overflow:visible;
   }
-  .top-section .blue-rectangle, .top-section .overlay-rectangle {
-    position: absolute;
-    /* top: -40rem; */
-    top: -85%;
-    /* bottom: 4rem; */
-    /* left: -9rem; */
-    left: -8%;
-    /* Height procent + width auto = responsive image */
-    /* width:125%;
-    max-width: 125%; */
-    height: auto;  
-} 
-.top-section {
+  .top-section .blue-rectangle {
 
-  height: 100vh;
+    top: -56rem;
+    left: -4rem;
 
-}
+ } 
+ .top-section .overlay-rectangle {
+
+    top: -56rem;
+    left: -4rem;
+
+ } 
+
 
 
 }
