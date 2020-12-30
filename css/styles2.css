@@ -388,6 +388,7 @@ ABOUT US
 .aboutUs-img img{
   max-width: 17.75rem;
   height: auto;
+  display: none;
 
 }
 .aboutUs-info {
@@ -516,7 +517,12 @@ ABOUT US
      .top-section {
         max-width: 690px;
       }
-    
+      .aboutUs-img img{
+        max-width: 17.75rem;
+        height: auto;
+        display: flex;
+      
+      }
 
   
 }
