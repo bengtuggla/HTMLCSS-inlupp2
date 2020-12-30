@@ -451,8 +451,76 @@ ABOUT US
   padding: 2rem 0;
   transform: scale(1.1);
 }
+/*
+======================== 
+FEATURES
+========================
+*/
+.features {
+  margin: 8rem auto 0 auto;
+  max-width: 1350px;
+  display: flex;
+}
+.features-info {
+  flex: 00 50%;
+}
+.features-info h1{
+color: var(--clr-black);
+font-size: 2.5rem;
+font-weight: 900;
+padding-right: 10rem;
+}
+.features-info p{
+  padding-right: 7rem;
+  line-height: 1.875rem;
+  }
+.features-img {
+flex: 00 50%;
+}
+.features-img img {
+  max-width: 100%;
+  height: auto;
+}
+.container {
+  display: flex;
+  justify-content: flex-start;
+  width: 100%;
+  margin-top: 2rem;
+  flex-wrap: wrap;
+  
 
+} 
+.infobox {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  flex:0 0 50%;
+  /* height: 8rem; */
+  /* width: 50%; */
+  
+  /* margin: 1rem; */
+}
+.infobox-text {
+flex: 6;
+}
+.infobox-img {
+  flex: 1;
+  padding-right: 1rem;
+  align-self: flex-start;
 
+}
+.infobox-text h1 {
+  font-size: 1.25rem;
+  font-weight: 900;
+  color: var(--clr-black);
+  padding: 0;
+}
+.infobox-text p {
+  padding: 0.3rem 0 2rem 0;
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+
+}
     
 /*
 =========================================================== 
