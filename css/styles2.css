@@ -711,7 +711,7 @@ Top section Mediaqueries
 @media (min-width: 1920px) {
   .top-section {
     max-width: 1920px;
-    overflow:visible;
+    /* overflow:visible; */
   }
   .top-section .blue-rectangle {
 
