@@ -401,10 +401,12 @@ ABOUT US
   /* letter-spacing: 0.8rem;*/
   line-height: 3.3125rem; 
   color: var(--clr-black);
-  width: 80%;
+  width: 100%;
   text-align: center;
-  padding-top: 2rem;
+  margin-top: 2rem;
+  padding: 0 auto;
 }
+
 .aboutUs-info p{
   line-height: 1.875rem; 
 }
@@ -412,9 +414,11 @@ ABOUT US
   position: relative;
   background: transparent;
   color: var(--clr-yellow);
-  font-size: 1.2rem;
+  font-size: 0.875rem;
   font-family: var(--ff-primary);
+  font-weight: normal;
   text-transform: capitalize;
+  letter-spacing: 0rem;
   border-radius: var(--radius);
   outline: none; 
   border: none;
@@ -457,58 +461,62 @@ FEATURES
 ========================
 */
 .features {
-  margin: 8rem auto 0 auto;
-  max-width: 1350px;
-  display: flex;
+  margin: 0 auto;
+  /* max-width: 1350px; */
+  max-width: 1170px;
+  display: block;
+  padding: 2rem;
 }
 .features-info {
   flex: 00 50%;
 }
 .features-info h1{
-color: var(--clr-black);
-font-size: 2.5rem;
-font-weight: 900;
-padding-right: 10rem;
+  color: var(--clr-black);
+  font-size: 2.5rem;
+  font-weight: 900;
+  padding: 0 auto;
+  text-align: center;
+  margin-top: 2rem;
 }
 .features-info p{
-  padding-right: 7rem;
+  padding: 0 auto;
   line-height: 1.875rem;
   }
 .features-img {
-flex: 00 50%;
+  display: none;
+  width: 100%;
+  height: auto;
 }
 .features-img img {
-  max-width: 100%;
+  max-width: 50%;
   height: auto;
 }
 .container {
-  display: flex;
+  display: block;
   justify-content: flex-start;
   width: 100%;
   margin-top: 2rem;
   flex-wrap: wrap;
-  
-
 } 
 .infobox {
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
   flex:0 0 50%;
-  /* height: 8rem; */
-  /* width: 50%; */
-  
-  /* margin: 1rem; */
+  padding-right: 2rem;
+  padding-bottom: 2rem;
 }
 .infobox-text {
 flex: 6;
+
 }
 .infobox-img {
   flex: 1;
   padding-right: 1rem;
   align-self: flex-start;
-
+  padding-top: 0.7rem;
 }
+
 .infobox-text h1 {
   font-size: 1.25rem;
   font-weight: 900;
@@ -519,6 +527,8 @@ flex: 6;
   padding: 0.3rem 0 2rem 0;
   font-size: 0.875rem;
   line-height: 1.25rem;
+  letter-spacing: 0rem;
+  text-align: center;
 
 }
     
@@ -589,10 +599,16 @@ flex: 6;
         max-width: 17.75rem;
         height: auto;
         display: flex;
-      
       }
-
-  
+      .container {
+        display: flex;
+      } 
+      .infobox {
+        padding-bottom: 0rem;
+      }
+  .infobox-text p {
+    text-align: left;
+  }
 }
 
 
@@ -622,7 +638,8 @@ flex: 6;
       }
       .aboutUs-info h1{
         text-align: left;
-        padding-top: 0;
+        margin-top: 0;
+        padding-right: 6rem;
       }
       .btn-about {
         position: relative;
@@ -638,7 +655,23 @@ flex: 6;
         display: flex;
         margin: 0;
       }
-    
+      .features-img {
+        display: flex;
+        flex: 00 50%;
+        }
+        .features-info h1 {
+          text-align: left;
+          padding-top: 0rem;
+          padding-right: 6rem;
+          margin-top: 0rem;
+        }
+        .features {
+          margin: 8rem auto 0 auto;
+        }
+        .features-info p{
+          padding-right: 3rem;
+          }
+
 }
 
 
@@ -801,7 +834,12 @@ flex: 6;
             align-items: center;
             padding: 0;
           }
-   
+          .features {
+            display: flex;
+          }
+          .features-img img {
+            max-width: 100%;
+          }
 
     }
        
@@ -841,7 +879,9 @@ flex: 6;
     margin: 0;
   }
   
-
+  .features {
+    padding: 0;
+  }
 }
 
 
