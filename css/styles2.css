@@ -562,6 +562,52 @@ CAROUSEL
 }
     
 /*
+======================== 
+STATISTICS
+========================
+*/
+.statistics-container {
+  max-width: 1048px;
+  margin: 0 auto;
+  padding-top: 5rem;
+}
+.statistics-container h1 {
+  font-weight: 900;
+  font-size: 2.5rem;
+  color: var(--clr-black);
+  text-align: center;
+} 
+.statistics-container p{
+ font-size: 1rem;
+ line-height: 1.875rem;
+ text-align: center;
+} 
+.statistics-text {
+  max-width: 33.56rem;
+  margin: 0 auto;
+}
+.statistics-bottombox {
+  display: flex;
+  justify-content: space-between;
+}
+.bottombox-box {
+  display: block;
+}
+.bottombox-box h1{
+font-family: URW DIN Arabic Bold;
+font-size:2.5rem ;
+color: var(--clr-blue);
+font-weight:bold ;
+text-align: center;
+}
+.bottombox-box p{
+font-size: 1.56rem;
+font-weight: 500 ;
+color: var(--clr-black);
+text-align: center;
+}
+
+/*
 =========================================================== 
 >>>> Mediaqueries <<<<
 ===========================================================
