@@ -376,6 +376,7 @@ ABOUT US
   max-width: 1350px;
   display: block;
   padding: 2rem;
+  border: 2px solid red;
 
 }
 .aboutUs-img {
@@ -462,7 +463,6 @@ FEATURES
 */
 .features {
   margin: 0 auto;
-  /* max-width: 1350px; */
   max-width: 1170px;
   display: block;
   padding: 2rem;
@@ -608,6 +608,75 @@ color: var(--clr-black);
 text-align: center;
 }
 
+/*
+======================== 
+BANNER
+========================
+*/
+
+
+.banner-container {
+  width: 100%;
+  max-height: 550px;
+  background: url(../images/Bg-download.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+/* banner-center display: block HÄR  display flex -> t.ex 992 eller 768 */
+.banner-center {
+  margin: 0 auto;
+  max-width: 1300px;
+  display: block;
+  /* flex: 0 0 50%; */
+}
+/* banner-info width 100% height auto HÄR - flex: 0 0 50% -> 992 eller 768 */
+.banner-info {
+  display: block;
+width: 100%;
+height: auto;
+}
+.banner-info h1 {
+  font-size: 50px;
+  /* font-size: 3.125rem; */
+  font-weight: bold;
+  color: var(--clr-white);
+  /* line-height: ;*/
+  word-spacing:0.8rem; 
+  letter-spacing: 0.1rem;
+  padding-right: 0rem;
+
+}
+.banner-info p {
+color: var(--clr-white);
+font-size: 1rem;
+font-weight: 400;
+padding-right: 10rem;
+}
+.banner-download {
+  display: flex;
+  justify-content: flex-start;
+  border: 1px solid firebrick;
+}
+.banner-download img{
+
+  max-width: 14.5rem;
+  /* height: auto; */
+  /* margin: auto;  */
+  padding-right: 1rem;
+  border: 1px solid yellow;
+}
+.banner-download img:hover{
+  max-width: 14.5rem;
+  height: auto;
+  margin: auto;
+  padding: 2rem 0;
+  transform: scale(1.1);
+}
+/* banner-info width 100% height auto HÄR eller display HIDDEN - flex: 0 0 50% -> 992 eller 768 */
+.banner-img {
+  width: 100%;
+  height: auto;
+}
 /*
 =========================================================== 
 >>>> Mediaqueries <<<<
@@ -924,6 +993,19 @@ text-align: center;
           .statistics-container p{
             padding: 0rem;
            } 
+           .banner-center {
+            display: flex;
+            justify-content: space-between;
+            border: 2px solid blue;
+          }
+          .banner-info {
+            display: block;
+            flex: 0 0 63%;
+
+            }
+            .banner-img {
+              /* flex: 0 0 50%; */
+            }
     }
        
 
