@@ -376,7 +376,6 @@ ABOUT US
   max-width: 1350px;
   display: block;
   padding: 2rem;
-  border: 2px solid red;
 
 }
 .aboutUs-img {
@@ -624,6 +623,7 @@ BANNER
   background-repeat: no-repeat;
   position: relative;
   padding-top: 0rem;
+  overflow: hidden;
 }
 .banner-phones {
   /* position: absolute; */
@@ -631,22 +631,23 @@ BANNER
   right: -1rem;
   height: 598px; */
   visibility: hidden;
+  overflow: hidden;
+
 }
 
-/* banner-center display: block HÄR  display flex -> t.ex 992 eller 768 */
 .banner-center {
   margin: 0 auto;
   max-width: 1200px;
   display: block;
   padding-top: 2rem;
 }
-/* banner-info width 100% height auto HÄR - flex: 0 0 50% -> 992 eller 768 */
+
 .banner-info {
   display: block;
   width: 100%;
   height: auto;
   text-align: center;
-  padding: 1rem;
+  padding: 0.5rem;
 }
 .banner-info h1 {
   /* font-size: 50px; */
@@ -676,19 +677,20 @@ padding-top: 2rem;
   max-width: 14.5rem;
   padding-right: 1rem;
   padding-bottom: 2rem;
+  transition: var(--transition);
 }
 .banner-download img:hover{
-  max-width: 14.5rem;
+  /* max-width: 14.5rem;
   height: auto;
-  margin: auto;
-  padding: 2rem 0;
-  transform: scale(1.1);
+  margin: auto; */
+  /* padding: 2rem 0; */
+  padding-left: 3rem;
+  /* transform: scale(1.1); */
 }
-/* banner-info width 100% height auto HÄR eller display HIDDEN - flex: 0 0 50% -> 992 eller 768 */
-.banner-img {
+/* .banner-img {
   width: 100%;
   height: auto;
-}
+} */
 
 /*
 =========================================================== 
@@ -1029,9 +1031,11 @@ padding-top: 2rem;
           .statistics-container p{
             padding: 0rem;
            } 
+
            .banner-center {
             display: flex;
             justify-content: space-between;
+            padding-top: 2rem;
           }
           /* .banner-info {
             display: block;
@@ -1044,6 +1048,7 @@ padding-top: 2rem;
               bottom: 0rem;
               right: -1rem;
               /* height: 598px; */
+              z-index: 0;
               visibility: visible;
           }
             .banner-info {
@@ -1051,11 +1056,15 @@ padding-top: 2rem;
               /* flex: 0 0 40%; */
               padding-left: 2rem;
               text-align: left;
-
+              z-index: 1;
+              margin-right: 30rem;
               }
               .banner-download {
-                justify-content: flex-start;
+                justify-content: flex-start !important;
                 margin: 0;
+              }
+              .banner-download img {
+                margin-right: 1rem;
               }
     }
        
@@ -1101,11 +1110,16 @@ padding-top: 2rem;
   .banner-info {
     flex: 0 0 63%;
     padding-left: 0rem;
+    padding-right: 0rem;
 
     }
     .banner-info p {
       padding-right: 10rem;
       }
+      .banner-center {
+        padding-top: 5rem;
+      }
+
 }
 
 
@@ -1151,7 +1165,9 @@ padding-top: 2rem;
  .top-section {
     max-width: 1500px;
   }
-
+  .banner-center {
+    padding-top: 9rem;
+  }
 
 }
 
@@ -1182,21 +1198,18 @@ padding-top: 2rem;
     /* overflow:visible; */
   }
   .top-section .blue-rectangle {
-
     top: -56rem;
     left: -4rem;
-
  } 
  .top-section .overlay-rectangle {
-
     top: -56rem;
     left: -4rem;
-
  } 
  .banner-phones {
-
   height: 598px;
-
+}
+.banner-container {
+  margin-top: 5rem;
 }
 
 
