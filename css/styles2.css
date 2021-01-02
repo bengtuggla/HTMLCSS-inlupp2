@@ -680,17 +680,64 @@ padding-top: 2rem;
   transition: var(--transition);
 }
 .banner-download img:hover{
-  /* max-width: 14.5rem;
-  height: auto;
-  margin: auto; */
-  /* padding: 2rem 0; */
   padding-left: 3rem;
-  /* transform: scale(1.1); */
+  transform: scale(1.1);
 }
-/* .banner-img {
-  width: 100%;
-  height: auto;
-} */
+
+/*
+======================== 
+CONTACT
+========================
+*/
+.contact-container {
+  max-width: 1170px;
+  height: 587px;
+  margin: 0 auto;
+  background: var(--clr-white);
+}
+.contact-info {
+  max-width: 537px;
+  margin: 0 auto;
+  text-align: center;
+  padding-top: 8.25rem;
+}
+.contact-info h1{
+  font-size: 2.5rem;
+  font-weight: 900;
+  color: var(--clr-black);
+  padding-bottom: 3.125rem;
+
+}
+.contact-info p{
+  font-size: 1rem;
+  font-weight: 400;
+  color: var(--clr-grey);
+  padding-bottom: 3.125rem;
+}
+.my-form {
+  max-width: 1170px;
+  height: 425px;
+}
+
+.gx-5 {
+  display: flex;
+  justify-content: center;
+}
+.bg-grey {
+  background: #fbfbfb !important;
+}
+::-webkit-input-placeholder {
+  font-size: 1rem!important;
+  color: #CCCCCC !important;
+  font-family: var(--ff-primary);
+}
+.input-lg {
+  height: 70px!important;
+}
+.btn-primary {
+  max-width: 13.75rem !important;
+  height: 3.75rem;
+}
 
 /*
 =========================================================== 
