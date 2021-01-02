@@ -617,53 +617,65 @@ BANNER
 
 .banner-container {
   width: 100%;
-  max-height: 550px;
+  margin: 0 auto;
+  height: 34.375rem;
   background: url(../images/Bg-download.png);
   background-size: cover;
   background-repeat: no-repeat;
+  position: relative;
+  padding-top: 0rem;
 }
+.banner-phones {
+  /* position: absolute; */
+  /* bottom: 0rem;
+  right: -1rem;
+  height: 598px; */
+  visibility: hidden;
+}
+
 /* banner-center display: block HÄR  display flex -> t.ex 992 eller 768 */
 .banner-center {
   margin: 0 auto;
-  max-width: 1300px;
+  max-width: 1200px;
   display: block;
-  /* flex: 0 0 50%; */
+  padding-top: 2rem;
 }
 /* banner-info width 100% height auto HÄR - flex: 0 0 50% -> 992 eller 768 */
 .banner-info {
   display: block;
-width: 100%;
-height: auto;
+  width: 100%;
+  height: auto;
+  text-align: center;
+  padding: 1rem;
 }
 .banner-info h1 {
-  font-size: 50px;
-  /* font-size: 3.125rem; */
+  /* font-size: 50px; */
+  font-size: 2rem;
   font-weight: bold;
   color: var(--clr-white);
   /* line-height: ;*/
-  word-spacing:0.8rem; 
-  letter-spacing: 0.1rem;
+  word-spacing:0.6rem; 
+  letter-spacing: 0rem;
   padding-right: 0rem;
-
 }
 .banner-info p {
 color: var(--clr-white);
 font-size: 1rem;
 font-weight: 400;
-padding-right: 10rem;
+/* padding-right: 10rem; */
+padding-top: 2rem;
 }
 .banner-download {
-  display: flex;
-  justify-content: flex-start;
-  border: 1px solid firebrick;
+  display: flex !important;
+  justify-content: space-around !important;
+  padding-top: 2rem;
+  /* flex-wrap: wrap; */
+  margin: 0 3rem;
 }
 .banner-download img{
-
   max-width: 14.5rem;
-  /* height: auto; */
-  /* margin: auto;  */
   padding-right: 1rem;
-  border: 1px solid yellow;
+  padding-bottom: 2rem;
 }
 .banner-download img:hover{
   max-width: 14.5rem;
@@ -677,6 +689,7 @@ padding-right: 10rem;
   width: 100%;
   height: auto;
 }
+
 /*
 =========================================================== 
 >>>> Mediaqueries <<<<
@@ -755,6 +768,17 @@ padding-right: 10rem;
     text-align: left;
   }
 }
+.banner-download {
+  display: flex;
+  justify-content: flex-start;
+  padding-top: 2rem;
+  flex-wrap: wrap;
+}
+.banner-download img{
+  max-width: 14.5rem;
+  padding-right: 1rem;
+  /* padding-bottom: 2rem; */
+}
 
 
 @media (min-width: 768px) {
@@ -816,8 +840,20 @@ padding-right: 10rem;
         .features-info p{
           padding-right: 3rem;
           }
+          /* .banner-download {
+            display: flex;
+            justify-content: space-around;
+            padding-top: 2rem;
+          }
+     */
+            .banner-info h1 {
+              font-size: 3.125rem;
 
-}
+            }
+            .banner-center {
+              padding-top: 9rem;
+            }
+
 
 
 @media (min-width: 992px) {
@@ -996,16 +1032,31 @@ padding-right: 10rem;
            .banner-center {
             display: flex;
             justify-content: space-between;
-            border: 2px solid blue;
           }
-          .banner-info {
+          /* .banner-info {
             display: block;
-            flex: 0 0 63%;
+            /* flex: 0 0 40%; 
+            padding-left: 2rem;
 
-            }
-            .banner-img {
-              /* flex: 0 0 50%; */
-            }
+            } */
+            .banner-phones {
+              position: absolute; 
+              bottom: 0rem;
+              right: -1rem;
+              /* height: 598px; */
+              visibility: visible;
+          }
+            .banner-info {
+              display: block;
+              /* flex: 0 0 40%; */
+              padding-left: 2rem;
+              text-align: left;
+
+              }
+              .banner-download {
+                justify-content: flex-start;
+                margin: 0;
+              }
     }
        
 
@@ -1047,6 +1098,14 @@ padding-right: 10rem;
   .features {
     padding: 0;
   }
+  .banner-info {
+    flex: 0 0 63%;
+    padding-left: 0rem;
+
+    }
+    .banner-info p {
+      padding-right: 10rem;
+      }
 }
 
 
@@ -1134,6 +1193,11 @@ padding-right: 10rem;
     left: -4rem;
 
  } 
+ .banner-phones {
+
+  height: 598px;
+
+}
 
 
 
