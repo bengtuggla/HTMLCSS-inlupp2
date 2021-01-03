@@ -327,9 +327,49 @@ SHOWCASE
   fill: var(--clr-grey);
   transition: var(--transition);
 }
-    
 
-
+    /* Animation */
+    .showcase-info h1 {
+      animation: pulse 8s 2;
+    }
+@keyframes pulse {
+    0% {
+      color: var(--clr-white);
+    }
+    10% {
+      text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+    }
+    10% {
+      text-shadow: -2px -2px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+    }
+    10% {
+      text-shadow: -3px -3px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+    }
+    10% {
+      text-shadow: -4px -4px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+    }
+    50% {
+      color: var(--clr-yellow);
+      text-shadow: -5px -5px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+      /* font-size: xx-large; */
+      font-size: 3rem;
+    }
+    60% {
+      text-shadow: -4px -4px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+    }
+    70% {
+      text-shadow: -3px -3px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+    }
+    80% {
+      text-shadow: -2px -2px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+    }
+    90% {
+      text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+  }
+  100% {
+    color: var(--clr-yellow);
+  }
+}
 /*
 =============== 
 EC LOGOS
@@ -734,10 +774,27 @@ CONTACT
 }
 .input-lg {
   height: 70px!important;
+  transition: var(--transition);
+}
+.input-lg:hover {
+  background: var(--clr-grey) !important;
+}
+.textarea {
+  transition: var(--transition);
+}
+.textarea:hover {
+  background: var(--clr-grey) !important;
 }
 .btn-primary {
   max-width: 13.75rem !important;
   height: 3.75rem;
+  outline: hidden;
+  border: hidden;
+  transition: var(--transition);
+}
+.btn-primary:hover {
+ transform: scale(1.1);
+ font-size: larger;
 }
 
 /*
@@ -782,7 +839,17 @@ ul {
   height: 2rem;
   border-radius: 6px;
   margin-right: 1rem;
+  transition: var(--transition);
 }
+.icon-bg:hover {
+  position:relative;
+  background:rgba(41, 142, 243, 0.9);
+  width: 3rem;
+  height: 3rem;
+  border-radius: 6px;
+  margin-right: 1rem;
+}
+
 .footer-icon i{
   font-size: 1rem;
   position: absolute;
