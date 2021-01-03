@@ -6,17 +6,7 @@ Fonts
 
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&family=Roboto:wght@400;900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap');
-/* font-family: 'Poppins', sans-serif; */
-/* 400 regular 15px - 0.9375rem, 16px - 1rem & 700 bold 57px-3.56rem */
-/* font-family: 'Roboto', sans-serif; */
-/* 400 regular 12px - 0.75rem, 14px - 0.875rem, 16px - 1rem, 18px - 1.125rem , 25px - 1.56rem, 32px - 2rem (footer icons)
-900 black 20px - 1.25rem, 40px - 2.5rem
-400 Bold 22px - 1.375rem , 50px - 3.125rem
-font-family: URW DIN Arabic Bold;
-40px - 2.5rem
 
-
-*/
 @font-face {
     font-family: URW DIN Arabic Bold;
     src: url(./fonts/FontsFree-Net-URW-DIN-Arabic-Bold-1.ttf);
@@ -110,20 +100,7 @@ Global Classes
   color: var(--clr-white);
   background: var(--clr-grey);
 }
-/*  
-.section {
-  padding: 5rem 0;
-}
-.section-title {
-  margin-bottom: 4rem;
-  text-align: center;
-}
-.section-title h2 {
-  text-transform: uppercase;
-}
-.section-title span {
-  color: var(--clr-primary-5);
-}*/
+
 .section-center {
   width: 90vw;
   margin: 0 auto;
@@ -147,7 +124,6 @@ HEADER
 .top-section {
     position: relative;
     height: 58rem;
-    /* height: 115vh; */
     width: 100%;
     margin: 0 auto;
     overflow: hidden;
@@ -158,28 +134,17 @@ HEADER
    position: absolute;
    top: -16rem;
    left: -4rem;
-   /* top: -16%;
-   left: -8%; */
-   /* Height procent + width auto = responsive image */
    width:115%;
-   /* height: auto;  */
-   /* max-width: 115%;  */
 } 
 .top-section .overlay-rectangle {
    display: flex;
    position: absolute;
    top: -16rem;
    left: -4rem;
-   /* top: 0rem; */
-   /* top: -16%;
-   left: -8%; */
-   /* Height procent + width auto = responsive image */
-   /* width: 100%; */
    width: 115%;
-    /* height: auto; */
    z-index: 3;
-   /* max-width: 115%;  */
 } 
+
 /* Nav-bar */
 .nav-bar {
     /* Ev sätta fixed */
@@ -234,7 +199,6 @@ HEADER
     /* font: 1rem; */
     font-size: --f;
     cursor: pointer;
-    /* font-weight: bold; */
   }
   .nav-link:hover {
     color: var(--clr-white);
@@ -275,10 +239,8 @@ SHOWCASE
   }
   .section-center h1 {
    font-family: var(--ff-secondary);
-   /* font-size: 3.56rem; */
    font-size: 2.5rem;
    text-align:center;
-   /* color: var(--clr-white); */
    color: var(--clr-yellow);
    font-weight: bold;
    text-transform: capitalize;
@@ -287,10 +249,8 @@ SHOWCASE
   .section-center p {
    font-family: var(--ff-secondary);
    font-size: 0.9rem;
-   /* font-size: 0.9375rem; */
    text-align: center;
    color: var(--clr-grey);
-   /* text-transform: capitalize; */
    padding: 1rem 1rem;
   }
 
@@ -328,10 +288,11 @@ SHOWCASE
   transition: var(--transition);
 }
 
-    /* Animation */
-    .showcase-info h1 {
-      animation: pulse 8s 2;
-    }
+  /* Animation */
+  .showcase-info h1 {
+    animation: pulse 8s 2;
+  }
+
 @keyframes pulse {
     0% {
       color: var(--clr-white);
@@ -380,26 +341,18 @@ EC LOGOS
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
-  /* height: 40rem; */
-  /* height: 10vh; */
-  /* width: 100vw; */
   margin: 3rem auto ;
-  /* margin-top: 5rem; */
   max-width: 1170px;
   padding: 3rem;
 }
 
 .ec-logos img{
-  /* flex: 100%; */
-  /* width: 11.44rem; */
   width:15rem;
   padding-bottom: 5rem;
   transition: var(--transition);
  
 } 
 .ec-logos img:hover{
-  /* flex: 100%; */
-  /* width: 11.44rem; */
   width:15rem;
   padding-bottom: 5rem;
  transform: scale(1.1);
@@ -438,7 +391,6 @@ ABOUT US
   font-family: var(--ff-primary);
   font-size: 2.5rem;
   font-weight: 900;
-  /* letter-spacing: 0.8rem;*/
   line-height: 3.3125rem; 
   color: var(--clr-black);
   width: 100%;
@@ -547,7 +499,7 @@ FEATURES
   padding-bottom: 2rem;
 }
 .infobox-text {
-flex: 6;
+  flex: 6;
 
 }
 .infobox-img {
@@ -629,7 +581,6 @@ STATISTICS
 }
 .statistics-bottombox {
   display: block;
-  /* justify-content: space-between; */
 }
 .bottombox-box {
   display: block;
@@ -667,13 +618,8 @@ BANNER
   overflow: hidden;
 }
 .banner-phones {
-  /* position: absolute; */
-  /* bottom: 0rem;
-  right: -1rem;
-  height: 598px; */
   visibility: hidden;
   overflow: hidden;
-
 }
 
 .banner-center {
@@ -691,11 +637,9 @@ BANNER
   padding: 0.5rem;
 }
 .banner-info h1 {
-  /* font-size: 50px; */
   font-size: 2rem;
   font-weight: bold;
   color: var(--clr-white);
-  /* line-height: ;*/
   word-spacing:0.6rem; 
   letter-spacing: 0rem;
   padding-right: 0rem;
@@ -704,14 +648,12 @@ BANNER
 color: var(--clr-white);
 font-size: 1rem;
 font-weight: 400;
-/* padding-right: 10rem; */
 padding-top: 2rem;
 }
 .banner-download {
   display: flex !important;
   justify-content: space-around !important;
   padding-top: 2rem;
-  /* flex-wrap: wrap; */
   margin: 0 3rem;
 }
 .banner-download img{
@@ -1012,19 +954,14 @@ ul {
         .features-info p{
           padding-right: 0rem;
           }
-          /* .banner-download {
-            display: flex;
-            justify-content: space-around;
-            padding-top: 2rem;
-          }
-     */
-            .banner-info h1 {
-              font-size: 3.125rem;
+        
+        .banner-info h1 {
+          font-size: 3.125rem;
 
-            }
-            .banner-center {
-              padding-top: 9rem;
-            }
+        }
+        .banner-center {
+          padding-top: 9rem;
+        }
 
 
 
@@ -1089,7 +1026,6 @@ ul {
       }
 
         a:hover > .uline{
-          /* text-decoration:underline; */
           border-bottom: 3px solid var(--clr-yellow);
           padding-bottom: 4px;
         }
@@ -1120,7 +1056,6 @@ ul {
         .section-center h1 {
          font-family: var(--ff-secondary);
          font-size: 1.7rem;
-         /* font-size: calc(100vw / 57); */
          text-align: left;
          color: var(--clr-white);
          font-weight: bold;
@@ -1132,8 +1067,6 @@ ul {
          font-size: 0.9375rem;
          text-align: left;
          color: var(--clr-white);
-         /* text-transform: capitalize; */
-         /* padding: 1rem 5rem; */
          padding: 2rem 2rem 2rem 0;
         }
         .btn-download {
@@ -1155,9 +1088,7 @@ ul {
           fill:var(--clr-white);
          }
          .ec-logos img{
-          /* flex: 25%; */
           width: 11.44rem;
-          /* width:20rem; */
           padding-bottom: 5rem;
          
         } 
@@ -1207,23 +1138,16 @@ ul {
             justify-content: space-between;
             padding-top: 2rem;
           }
-          /* .banner-info {
-            display: block;
-            /* flex: 0 0 40%; 
-            padding-left: 2rem;
-
-            } */
+      
             .banner-phones {
               position: absolute; 
               bottom: 0rem;
               right: -1rem;
-              /* height: 598px; */
               z-index: 0;
               visibility: visible;
           }
             .banner-info {
               display: block;
-              /* flex: 0 0 40%; */
               padding-left: 2rem;
               text-align: left;
               z-index: 1;
@@ -1245,9 +1169,7 @@ ul {
    .nav-link {
     margin-right: 2.5rem;
   }
-  /* .section-center h1 {
-    font-size: 2.5rem;
-   } */
+
    .section-center p {
     padding: 1rem 2rem 2rem 0;
    }
@@ -1317,12 +1239,7 @@ ul {
     margin-bottom: 0;
   }
 .ec-logos img{
-  /* flex: 25%; */
-
   width: 11.44rem !important;
-  /* width: 6rem; */
-  /* padding: 1rem 1rem; */ 
- 
 } 
 .top-section .blue-rectangle {
     top: -30rem;
@@ -1365,7 +1282,6 @@ ul {
 @media (min-width: 1920px) {
   .top-section {
     max-width: 1920px;
-    /* overflow:visible; */
   }
   .top-section .blue-rectangle {
     top: -56rem;
@@ -1382,62 +1298,5 @@ ul {
   margin-top: 5rem;
 }
 
-
-
 }
   
-
-
-
-
-
-
-/*
-=============== 
-Footer
-===============
-*/
-
-/* footer {
-  background: var(--clr-blue);
-  text-align: center;
-  padding-left: 2rem;
-  padding-right: 2rem;
-}
-.footer-overlay{
-    width: 100%;
-    opacity: 5%;
-    background-image: url("../images/footer-overlay.png");
-    background-size: cover;
-}
-.footer-logo {
-    height: 4rem;
-    z-index: 3;
-} */
-
-/*
-=============== 
-MEDIAQUERIES
-===============
-*/
-@media (min-width: 576px) {
-
-}
-
-
-
-@media (min-width:768px) {
-
-}
-
-
-@media (min-width: 992px) {
-
-
-}
-
-@media (min-width: 1170px) {
-
-
-}
-
