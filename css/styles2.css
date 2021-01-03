@@ -691,8 +691,7 @@ CONTACT
 */
 .contact-container {
   max-width: 1170px;
-  /* max-height: 587px; */
-  height: 100vh;
+  height: 100%;
   margin: 0 auto;
   background: var(--clr-white);
 }
@@ -745,38 +744,55 @@ CONTACT
 FOOTER
 ========================
 */
+
 footer {
-  background: url(../images/Bg-footer.png);
-  width: 100%;
-  height: 18.75rem;
+ background: url(../images/Bg-footer.png);
+ background-size: cover;
+ text-align: center;
+ padding-left: 2rem;
+ padding-right: 2rem;
+}
+.section {
+  padding: 5rem 0;
+  margin-top: 3rem;
+}
+.footer-links, .footer-icons {
   display: flex;
   justify-content: center;
-  align-content: center;
+  margin-bottom: 1.5rem;
+  flex-wrap: wrap;
 }
-.footer-container {
-  width: 34.35rem;
-  margin: 0 auto;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
-.footer-links {
-  width: 100%;
-    height: auto;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-}
-.footer-icons {
-  display: flex;
+ul {
+  list-style-type: none;
 }
 .footer-link {
   color: var(--clr-white);
+  text-transform: capitalize;
+  margin-right: 3rem;
+  transition: var(--transition);
+  font-size: 1.125rem;
+  font-weight: 500;
+
 }
-.footer-icon img{
-  padding-right: 1.5rem;
+.icon-bg {
+  position:relative;
+  background:rgba(94,173,254,0.9);
+  width: 2rem;
+  height: 2rem;
+  border-radius: 6px;
+  margin-right: 1rem;
 }
+.footer-icon i{
+  font-size: 1rem;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: var(--clr-white);
+
+}
+
+
 
 /*
 =========================================================== 
