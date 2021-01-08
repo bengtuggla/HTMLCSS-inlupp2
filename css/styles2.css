@@ -403,7 +403,7 @@ animation: slideFromLeft 5s ease-in-out 2s 1;
     transform:translateX(0px);
     opacity: 1;
   }
-  }
+  
 }
 
 /*
@@ -754,6 +754,10 @@ CONTACT
   display: flex;
   justify-content: center;
 }
+.g-5, .gx-5 {
+    --bs-gutter-x: 2rem !important;
+}
+
 .bg-grey {
   background: #fbfbfb !important;
 }
