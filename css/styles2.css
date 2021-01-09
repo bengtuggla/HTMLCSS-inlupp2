@@ -184,6 +184,7 @@ HEADER
     cursor: pointer;
     transition: var(--transition);
     animation: bounce 2s ease infinite;
+    margin-right: 2rem;
 }  
 /* nav-toggle Animation */
 @keyframes bounce {
@@ -1041,22 +1042,7 @@ ul {
     .nav-header {
         padding: 0 0;
       }
-      /* Show menu-button */
-      .btn-getapp {
-        display: inline-block;
-        background: var(--clr-yellow);
-        font-size: 1rem;
-        font-weight: 500;
-        letter-spacing: 0.02rem;
-        padding: 0.7rem 2rem;
-        transition: var(--transition);
-        outline: none;
-      }
-      .btn-getapp:hover {
-        background: var(--clr-grey);
-        color: var(--clr-white);
-
-      }
+  
       /* remove white background */
       .nav-links {
         background: transparent;
@@ -1119,7 +1105,7 @@ ul {
          font-size: 0.9375rem;
          text-align: left;
          color: var(--clr-white);
-         padding: 2rem 2rem 2rem 0;
+         padding: 2rem 2rem 1rem 0;
         }
         .btn-download {
           border: 1px solid white;
@@ -1151,12 +1137,12 @@ ul {
 
         }
         .top-section .blue-rectangle {
-            top: -24rem;
-            left: -4rem;
+            top: -22rem;
+            left: -5rem;
          } 
          .top-section .overlay-rectangle {
-            top: -24rem;
-            left: -4rem;
+            top: -22rem;
+            left: -5rem;
          } 
          .top-section {
             max-width: 1150px;
@@ -1226,12 +1212,14 @@ ul {
     padding: 1rem 2rem 2rem 0;
    }
    .top-section .blue-rectangle {
-    top: -27rem;
-    left: -4rem;
+    top: -29rem;
+    /* left: -4rem; */
+    left: -6rem;
  } 
  .top-section .overlay-rectangle {
-    top: -27rem;
-    left: -4rem;
+    top: -29rem;
+    /* left: -4rem; */
+    left: -6rem;
  } 
  .top-section {
     max-width: 1350px;
@@ -1270,7 +1258,22 @@ ul {
 
 
 @media (min-width: 1300px) {
- 
+     /* Show menu-button */
+      .btn-getapp {
+        display: inline-block;
+        background: var(--clr-yellow);
+        font-size: 1rem;
+        font-weight: 500;
+        letter-spacing: 0.02rem;
+        padding: 0.7rem 2rem;
+        transition: var(--transition);
+        outline: none;
+      }
+      .btn-getapp:hover {
+        background: var(--clr-grey);
+        color: var(--clr-white);
+
+      }
 }
 
 
@@ -1294,12 +1297,14 @@ ul {
   width: 11.44rem !important;
 } 
 .top-section .blue-rectangle {
-    top: -30rem;
-    left: -4rem;
+    top: -32rem;
+    /* left: -4rem; */
+    left: -6rem;
  } 
  .top-section .overlay-rectangle {
-    top: -30rem;
-    left: -4rem;
+    top: -32rem;
+    /* left: -4rem; */
+    left: -6rem;
  } 
  .top-section {
     max-width: 1500px;
@@ -1319,11 +1324,13 @@ ul {
       }
     .top-section .blue-rectangle {
         top: -40rem;
-        left: -4rem;
+        /* left: -4rem; */
+        left: -8rem;
      } 
      .top-section .overlay-rectangle {
         top: -40rem;
-        left: -4rem;
+        /* left: -4rem; */
+        left: -8rem;
      } 
      .top-section {
         max-width: 1750px;
@@ -1337,11 +1344,13 @@ ul {
   }
   .top-section .blue-rectangle {
     top: -56rem;
-    left: -4rem;
+    /* left: -4rem; */
+    left: -8rem;
  } 
  .top-section .overlay-rectangle {
     top: -56rem;
-    left: -4rem;
+    /* left: -4rem; */
+    left: -8rem;
  } 
  .banner-phones {
   height: 598px;
