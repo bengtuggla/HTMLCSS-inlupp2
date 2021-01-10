@@ -486,7 +486,7 @@ ABOUT US
   max-width: 14.5rem;
   height: auto;
   margin: auto;
-  padding: 2rem 0;
+  padding: 2rem 1.18rem 0 0;
   transition: var(--transition);
 }
 .info-download img:hover{
