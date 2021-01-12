@@ -1000,6 +1000,7 @@ ul {
       }
       .features-img {
         display: flex;
+        justify-content: center;
         flex: 00 50%;
         }
         .features-info h1 {
@@ -1174,6 +1175,7 @@ ul {
           }
           .features-img img {
             max-width: 100%;
+            object-fit: contain;
           }
 
           .statistics-bottombox {
