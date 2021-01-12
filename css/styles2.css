@@ -1207,6 +1207,7 @@ ul {
               margin-right: 30rem;
               }
               .banner-download {
+                flex-wrap: unset;
                 justify-content: flex-start !important;
                 margin: 0;
               }
