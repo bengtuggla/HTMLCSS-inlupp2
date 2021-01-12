@@ -1266,11 +1266,14 @@ ul {
       .banner-center {
         padding-top: 5rem;
       }
-      
+
     .statistics-bottombox {
     display: flex;
     justify-content: space-between;
   }    
+  .carousel-container {
+    margin: 12rem auto 0 auto;
+}
 }
 
 
