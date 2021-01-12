@@ -1180,7 +1180,7 @@ ul {
 
           .statistics-bottombox {
             display: flex;
-            justify-content: space-between;
+            justify-content: space-evenly;
           }
           .statistics-container p{
             padding: 0rem;
@@ -1266,7 +1266,11 @@ ul {
       .banner-center {
         padding-top: 5rem;
       }
-
+      
+    .statistics-bottombox {
+    display: flex;
+    justify-content: space-between;
+  }    
 }
 
 
