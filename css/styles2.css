@@ -910,7 +910,7 @@ ul {
 
     .ec-logos {
       display: flex;
-      justify-content: space-between;
+      justify-content: space-evenly;
       padding: 2rem 0;
     }
     .section-center p {
@@ -965,7 +965,7 @@ ul {
     } 
     .ec-logos {
       display: flex;
-      justify-content: space-between;
+      justify-content: space-evenly;
       padding: 2rem 0;
     }
     .top-section .blue-rectangle {
@@ -1116,6 +1116,7 @@ ul {
          color: var(--clr-white);
          padding: 2rem 2rem 1rem 0;
         }
+      
         .btn-download {
           border: 1px solid white;
           border-radius: 0.7rem;
@@ -1141,7 +1142,7 @@ ul {
         } 
         .ec-logos {
           display: flex;
-          justify-content: space-between;
+          justify-content: space-evenly;
           padding: 2rem 0;
 
         }
@@ -1164,6 +1165,9 @@ ul {
             justify-content: space-between;
             align-items: center;
             padding: 0;
+          }
+          .aboutUs-info {
+          padding-right: 2rem;
           }
           .features {
             display: flex;
@@ -1295,8 +1299,8 @@ ul {
   font-size: 2.5rem;
  }
  .section-center p {
-
-    padding: 2rem 8rem 2rem 0;
+    padding: 2rem 9rem 2rem 0;
+    line-height: 1.875rem;
    }
  .showcase-info {
     padding-left:3rem;
@@ -1321,7 +1325,9 @@ ul {
   .banner-center {
     padding-top: 9rem;
   }
-
+   .aboutUs-info {
+    padding-right: 0rem;
+  }
 }
 
 @media (min-width: 1600px) {
@@ -1370,6 +1376,10 @@ ul {
 .aboutUs {
   margin: 0 auto 0 14rem;
 }
+ .ec-logos {
+          /* display: flex; */
+          justify-content: space-between;
+        }
 
 }
   
