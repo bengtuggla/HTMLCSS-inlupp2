@@ -871,6 +871,9 @@ ul {
   .top-section .blue-rectangle {
     display: none;
   }
+  .banner-download {
+    flex-wrap: wrap;
+  }
 }
 @media (min-width: 460px) {
   .nav-center {
