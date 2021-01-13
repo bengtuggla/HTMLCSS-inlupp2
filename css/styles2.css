@@ -633,9 +633,26 @@ STATISTICS
 */
 .statistics-container {
   max-width: 1048px;
-  margin: 0 auto;
-  padding-top: 5rem;
+  margin: 4rem auto 0 auto;
+  /* padding-top: 5rem; */
+  padding-top: 1rem;
+  /* display: flex; */
+  background-image: url(../images/worldmap.png);
+  background-size: 50rem;
+  background-repeat: no-repeat;
+  background-position: center;
 }
+/* .worldmap {
+  content: '';
+  align-self: center;
+  justify-self: center;
+  width: 828px;
+  height: 363;
+  background-image: url(../images/worldmap.png);
+  background-size: cover;
+  opacity: 1;
+  border: 1px solid red;
+} */
 .statistics-container h1 {
   font-weight: 900;
   font-size: 2.5rem;
@@ -1195,6 +1212,9 @@ ul {
   }
   .statistics-container p {
     padding: 0rem;
+  }
+  .statistics-container {
+    height: 300px;
   }
 
   .banner-center {
