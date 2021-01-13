@@ -1350,16 +1350,14 @@ ul {
 
 @media (min-width: 1920px) {
   .top-section {
-    max-width: 1920px;
+    max-width: none;
   }
   .top-section .blue-rectangle {
     top: -56rem;
-    /* left: -4rem; */
     left: -8rem;
   }
   .top-section .overlay-rectangle {
     top: -56rem;
-    /* left: -4rem; */
     left: -8rem;
   }
   .banner-phones {
