@@ -523,7 +523,7 @@ FEATURES
   justify-self: flex-start;
   height: 380px;
   width: 252px;
-  background-image: url(../images/dots.png);
+  background-image: url(../images/dots.svg);
   background-size: initial;
   background-repeat: repeat;
 }
